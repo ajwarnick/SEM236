@@ -14,9 +14,10 @@ int counter = 1;
 boolean forward = true; 
 //precent of each step 
 float s = (100/steps)/100; 
-
-
+//Ramdom Temp
 int temp = int(random(100)); 
+//Global ZIP CODE 
+String gZIP = "";
 
 void setup() { 
   size(500, 400); 
@@ -51,22 +52,115 @@ void draw() {
     //set counter to next step
     counter++;
   } 
-  //call the function to write the temp
-  writeTemp(temp);
+  
+  //Test if ZIP has been written 
+  if(gZIP != ""){
+    //call the function to write the zip code
+    //println("zip");
+    writeZIP(gZIP);
+  }else{
+    //call the function to write the temp
+    //println("temp");
+    writeTemp(temp);
+  }
+  
 } 
 
 
+void keyPressed() {
+  if(gZIP.length() == 4){
+    
+    if (keyCode == 49) {
+      gZIP += "1";
+    }else if(keyCode == 50){
+      gZIP += "2";
+    }else if(keyCode == 51){
+      gZIP += "3";
+    }else if(keyCode == 52){
+      gZIP += "4";
+    }else if(keyCode == 53){
+      gZIP += "5";
+    }else if(keyCode == 54){
+      gZIP += "6";
+    }else if(keyCode == 55){
+      gZIP += "7";
+    }else if(keyCode == 56){
+      gZIP += "8";
+    }else if(keyCode == 57){
+      gZIP += "9";
+    }else if(keyCode == 48){
+      gZIP += "0";
+    }
+    
+    //getWeather(gZIP);
+    gZIP = "";
+    
+  }else{
+    
+    if (keyCode == 49) {
+      gZIP += "1";
+    }else if(keyCode == 50){
+      gZIP += "2";
+    }else if(keyCode == 51){
+      gZIP += "3";
+    }else if(keyCode == 52){
+      gZIP += "4";
+    }else if(keyCode == 53){
+      gZIP += "5";
+    }else if(keyCode == 54){
+      gZIP += "6";
+    }else if(keyCode == 55){
+      gZIP += "7";
+    }else if(keyCode == 56){
+      gZIP += "8";
+    }else if(keyCode == 57){
+      gZIP += "9";
+    }else if(keyCode == 48){
+      gZIP += "0";
+    } 
+  } 
+}
 
 
-void writeTemp(int temp) { 
+
+
+void writeTemp(int t) { 
   //get the temp and cast it as a string
-  String t = str(temp); 
+  String lt = str(t); 
   //add the degree symbol to the string
-  t += "°"; 
+  lt += "°"; 
   //set the color of the text
   fill(100); 
   //set the text size
   textSize(64); 
   //write the text to the screen
-  text(t, height/2, width/2);
+  text(lt, height/2, width/2);
+}
+
+void writeZIP(String z) { 
+  //set the color of the text
+  fill(100); 
+  //set the text size
+  textSize(64); 
+  //write the text to the screen
+  text(z, height/2, width/2);
+  
+  //Call the get Weather here if you want to hook the app up to the internet
+  
+}
+
+
+JSONObject getWeather(String z){
+  
+  JSONObject json;
+  String whole_key = "&APPID=";
+  
+  String zip_code = z;
+  String full_zip = "weather?zip=" + zip_code + ",us";
+  String our_url = "http://api.openweathermap.org/data/2.5/forecast/";
+  String full_url = our_url + full_zip + whole_key + api_key;
+
+  json = loadJSONObject(full_url);
+  
+  return json;
 }
