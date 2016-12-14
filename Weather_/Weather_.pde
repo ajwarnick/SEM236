@@ -154,7 +154,7 @@ JSONObject getWeather(String z){
   
   JSONObject json;
   String whole_key = "&APPID=";
-  
+  String api_key = "fa312eae86bd280cd0fd51fa3026aef9";
   String zip_code = z;
   String full_zip = "weather?zip=" + zip_code + ",us";
   String our_url = "http://api.openweathermap.org/data/2.5/forecast/";
