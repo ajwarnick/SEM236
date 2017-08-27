@@ -27,10 +27,11 @@ Students will gain exposure to the intricacies of utilizing and integrating digi
 - Interdisciplinary Art
 - Video Art
 - Sound Art
+- Raspberry Pi
 - Installation Art
-- Performance Art
 - Process Art
 - Net Art
+- Procssing.org/P5.js
 - Collaboration
 - Digital File Management and Workflow
 - 3D Modeling
@@ -38,7 +39,7 @@ Students will gain exposure to the intricacies of utilizing and integrating digi
 ## PROJECTS/CLASSWORK
 - 3 Individual projects
 - 1 Group project
-- Group and individual experiments and exercises both on and off campus 
+- Group and individual experiments and exercises both on and off campus
 - Presentations and critiques (group and individual)
 - Readings and discussion
 - Studio Visits
@@ -49,7 +50,7 @@ PDFs will be provided by Faculty...no book required.
 
 ## CLASS MATERIALS
 - Raspberry Pi Kit (purchase from Erin)
-- 1 Sheet (4x8) MDF $34.93 
+- 1 Sheet (4x8) MDF $34.93
 - Some money from 3D print at think[Box]
 - USB 3 Thumb Drive [16gb]
 
@@ -70,9 +71,9 @@ Presentation / Crit
 ### Assignment 2
 #### Sound / Raspberry Pi FM
 ##### Week 5 (Sep 25)
-Introduction to Recording / Adobe Audition 
+Introduction to Recording / Adobe Audition
 ##### Week 6 (Oct 02)
-Introduction to Raspberry Pi 
+Introduction to Raspberry Pi
 ##### Week 7 (Oct 09)
 Reading - The Science of Sound / Work Day
 ##### Week 8 (Oct 16)
@@ -81,13 +82,13 @@ Presentation / Crit
 ### Assignment 3
 #### Processing
 ##### Week 9 (Oct 23)  
-Introduction to Programing 
+Introduction to Programing
 ##### Week 10 (Oct 30)  
-Expanding Programing 
+Expanding Programing
 ##### Week 11 (Nov 06)  
 Using programming with data and the web
 ##### Week 12 (Nov 13)  
-Presentation 
+Presentation
 
 ### Assignment 4  
 #### 3d Modeling  
