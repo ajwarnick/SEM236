@@ -1,4 +1,4 @@
-#Week 1
+# Week 1
 
 ## History of Sculpture
 
@@ -60,6 +60,21 @@ In 1976 John Kaldor invited Paik and his collaborator, the cellist Charlotte Moo
 
 ### Stop Motion
 
+[Race Horse First Film Ever 1878 Eadweard Muybridge](https://www.youtube.com/watch?v=IEqccPhsqgA)
+
+[Eadweard Muybridge](https://en.wikipedia.org/wiki/Eadweard_Muybridge#Stanford_and_horse_gaits)
+
+[William Kentridge](https://thebroad.org/art/william-kentridge)
+
+[Automatic Writing - William Kentridge](https://www.youtube.com/watch?v=OmvK7A84dlk)
 
 
 ### Green Screen
+
+[ARTISTS DO GREEN SCREEN](https://godsaveprint.wordpress.com/seminarsscreenings/artists-do-green-screen/)
+
+[Andy Davis](http://www.andypdavis.com/Watergass-Act-II)
+
+
+
+
