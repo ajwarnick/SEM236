@@ -1,11 +1,11 @@
-Week 1
+#Week 1
 
-### History of Sculpture
+## History of Sculpture
 
 These three objects trace the history of the intertwining of sculpture and technology. 
 
 
-###The Swimming Reindeer
+### The Swimming Reindeer
 
 The Swimming Reindeer is the name given to a 13,000-year-old Magdalenian sculpture of two swimming reindeer conserved in the British Museum. The sculpture was made in France by an unknown artist who carved the artwork from the tip of a mammoth tusk.
 [Wikipedia](https://en.wikipedia.org/wiki/Swimming_Reindeer)
@@ -16,7 +16,7 @@ The Swimming Reindeer is the name given to a 13,000-year-old Magdalenian sculptu
 [The British Museum](http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=808748&partId=1)
 
 
-###Benin Plaques
+### Benin Plaques
 
 Relief plaque made of brass cast using the 'cire perdue' (lost wax) technique. Rectangular in form with side flanges (partly missing). Holes for attachment at top centre and bottom right and left. Background surface is decorated with stylised quatrefoil (river leaf) patterns and stippling.
 
@@ -29,8 +29,8 @@ Head and torso of two small European figures flank either side of Oba's crown. B
 [The British Museum](https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=610486&partId=1)
 
 
-###TV Cello
-####Nam June Paik
+### TV Cello
+#### Nam June Paik
 
 Nam June Paik was a pioneer of video installation in the early 1960s. Associated with the international conceptual movement Fluxus, Paik regularly collaborated with other Fluxus artists such as Joseph Beuys and George Maciunas.
 
@@ -41,6 +41,8 @@ In 1976 John Kaldor invited Paik and his collaborator, the cellist Charlotte Moo
 [Charlotte Moorman performs with Paik's 'TV cello’](https://www.youtube.com/watch?v=-9lnbIGHzUM)
 
 
+
+## Examples
 
 ### Rotoreliefs
 
@@ -56,3 +58,8 @@ In 1976 John Kaldor invited Paik and his collaborator, the cellist Charlotte Moo
 
 [Duchamp Rotorelief Escargot](https://s-media-cache-ak0.pinimg.com/736x/02/f0/91/02f09123e8a02afb25045bc0143d8c4c--marcel-duchamp-amazing-art.jpg)
 
+### Stop Motion
+
+
+
+### Green Screen
