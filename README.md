@@ -61,42 +61,40 @@ PDFs will be provided by Faculty...no book required.
 #### Video / CNC
 ##### Week 1 (Aug 28)
 Syllabus - Introduction to Video
-##### Week 2 (Sep 04)
+##### Week 2 (Sep 11)
 Introduction to CNC
-##### Week 3 (Sep 11)
+##### Week 3 (Sep 18)
 Reading - Montage / Work Day
-##### Week 4 (Sep 18)
+##### Week 4 (Sep 25)
 Presentation / Crit
 
 ### Assignment 2
 #### Sound / Raspberry Pi FM
-##### Week 5 (Sep 25)
+##### Week 5 (Oct 02)
 Introduction to Recording / Adobe Audition
-##### Week 6 (Oct 02)
+##### Week 6 (Oct 09)
 Introduction to Raspberry Pi
-##### Week 7 (Oct 09)
-Reading - The Science of Sound / Work Day
-##### Week 8 (Oct 16)
-Presentation / Crit
+##### Week 7 (Oct 16)
+Presentation / Crit - Reading - The Science of Sound
 
 ### Assignment 3
 #### Processing
-##### Week 9 (Oct 23)  
+##### Week 8 (Oct 23)  
 Introduction to Programing
-##### Week 10 (Oct 30)  
+##### Week 9 (Oct 30)  
 Expanding Programing
-##### Week 11 (Nov 06)  
+##### Week 10 (Nov 06)  
 Using programming with data and the web
-##### Week 12 (Nov 13)  
+##### Week 11 (Nov 13)  
 Presentation
 
 ### Assignment 4  
 #### 3d Modeling  
-##### Week 13 (Nov 20)  
+##### Week 12 (Nov 20)  
 Introduction to CAD
-##### Week 14 (Nov 27)  
+##### Week 13 (Nov 27)  
 Introduction to Unity
-##### Week 15 (Dec 04)  
+##### Week 14 (Dec 04)  
 Introduction to 3D printing
-##### Week 16 (Dec 11)  
+##### Week 15 (Dec 11)  
 Presentation / Crit
