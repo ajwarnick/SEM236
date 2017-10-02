@@ -120,7 +120,7 @@ Janet Cardiff (born March 15, 1957) is a Canadian artist who works chiefly with 
 ### DJ Spooky
 Paul Dennis Miller (born 1970), known by his stage name DJ Spooky, That Subliminal Kid, is a Washington DC-born electronic and experimental hip hop musician whose work is often called by critics or his fans as "illbient" or "trip hop". He is a turntablist, a producer, a philosopher, and an author. He borrowed his stage name from the character The Subliminal Kid in the novel Nova Express by William S. Burroughs. Having studied philosophy and French literature at Bowdoin College, he has become a Professor of Music Mediated Art at the European Graduate School and is the Executive Editor of Origin Magazine.  [- wikipedia](https://en.wikipedia.org/wiki/DJ_Spooky)
 
-[The Origins of DJ Spooky](https://www.youtube.com/watch?v=z5pZ2Cn13OA)
-[DJ Spooky: An Antarctic Expedition In Sound](http://www.npr.org/templates/story/story.php?storyId=120914418)
-[Dj Spooky - Sinfonia Antarctica (MatSymon Edit)](https://www.youtube.com/watch?v=aEyDlkpStLo)
-[TEDxAustin - Paul "DJ Spooky" Miller](https://www.youtube.com/watch?v=vYUEOqwOOW8)
+[The Origins of DJ Spooky](https://www.youtube.com/watch?v=z5pZ2Cn13OA)  
+[DJ Spooky: An Antarctic Expedition In Sound](http://www.npr.org/templates/story/story.php?storyId=120914418)  
+[Dj Spooky - Sinfonia Antarctica (MatSymon Edit)](https://www.youtube.com/watch?v=aEyDlkpStLo)  
+[TEDxAustin - Paul "DJ Spooky" Miller](https://www.youtube.com/watch?v=vYUEOqwOOW8)  
