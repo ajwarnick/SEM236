@@ -51,7 +51,7 @@ PDFs will be provided by Faculty...no book required.
 ## CLASS MATERIALS
 - Raspberry Pi Kit (purchase from Erin)
 - 1 Sheet (4x8) MDF $34.93
-- Some money from 3D print at think[Box]
+- Some money for 3D print at think[Box]
 - USB 3 Thumb Drive [16gb]
 
 
