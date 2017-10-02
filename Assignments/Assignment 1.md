@@ -1,3 +1,7 @@
+SEM 236
+Anthony Warnick
+Fall 2017
+
 Assignment 1
 
 - 3 Videos
