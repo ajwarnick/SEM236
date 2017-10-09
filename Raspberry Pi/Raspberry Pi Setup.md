@@ -15,9 +15,10 @@ https://etcher.io/
 ![Install Etcher](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_1.png)
 
 - Select Raspbian image you downloaded  
-![alt text](http://url/to/img.png)
+![Select Raspbian image you downloaded](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_2.png)
+
 - Select your SD Card   
-![alt text](http://url/to/img.png)
+![Select your SD Card](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_3.png)
 
 - Flash  
 
