@@ -103,3 +103,21 @@ Now you should be logged into the Raspberry Pi and we can start transferring fil
 you will need to download __Pi fm_transmitter__:
 https://github.com/somu1795/fm_transmitter
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## FIND A FREQUENCY 
+
+We will need to talk within our class and divid up the available spectrum. But the resource that we will use to find the frequencies we can use is https://radio-locator.com/
+
