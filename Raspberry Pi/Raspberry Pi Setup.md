@@ -107,7 +107,10 @@ https://github.com/somu1795/fm_transmitter
 
 
 
+mkdir fm
 
+
+scp -r /Users/warnick/Documents/Processing/TIME/Raspberry\ Pi/fm_transmitter-master pi@raspberrypi.local:fm/
 
 
 
