@@ -27,20 +27,17 @@ https://etcher.io/
 ## PULL THE SD CARD COMPLETELY OUT OF YOUR MACHINE
 
 ## REINSERT THE SD CARD
-![alt text](http://url/to/img.png)
-
+![REINSERT THE SD CARD](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_4.png)
 Etcher automatically unmounts the SD card. And we need to edit some of the files that are on the SD card before we insert it into the Raspberry Pi.  
 
 Your SD Card should have these files and look like this
-
-![alt text](http://url/to/img.png)
+![REINSERT THE SD CARD](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_5.png)
 
 
 
 ## ENABLE SSH
 
 We need to create a file called __ssh__ on the SD Card. This file should not have an extension and should live at the root of the directory. 
-![alt text](http://url/to/img.png)
 
 #### Edit boot/config.txt
 Next, append 
