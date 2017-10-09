@@ -93,4 +93,13 @@ ssh pi@raspberrypi.local
 ```
 Are you sure you want to continue connecting (yes/no)? yes
 ```
+The ssh password for user pi is `raspberry`.
+
+Now you should be logged into the Raspberry Pi and we can start transferring files and running commands.
+
+
+## INSTALLING Pi fm_transmitter
+
+you will need to download __Pi fm_transmitter__:
+https://github.com/somu1795/fm_transmitter
 
