@@ -12,7 +12,7 @@ https://etcher.io/
 
 ## FLASH SD (This step requres admin access)
 - Install Etcher  
-![alt text](http://url/to/img.png)
+![Install Etcher](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_1.png)
 
 - Select Raspbian image you downloaded  
 ![alt text](http://url/to/img.png)
