@@ -10,7 +10,7 @@ ETCHER
 https://etcher.io/
 
 
-## Flash SD (This step requres admin access)
+## FLASH SD (This step requres admin access)
 - Install Etcher
 ![alt text](http://url/to/img.png)
 
@@ -23,9 +23,9 @@ https://etcher.io/
 
 
 
-## Pull the SD Card completely out of your machine
+## PULL THE SD CARD COMPLETELY OUT OF YOUR MACHINE
 
-## Reinsert the SD Card
+## REINSERT THE SD CARD
 ![alt text](http://url/to/img.png)
 
 Etcher automatically unmounts the SD card. And we need to edit some of the files that are on the SD card before we insert it into the Raspberry Pi.
@@ -41,5 +41,7 @@ Your SD Card should have these files and look like this
 We need to create a file called __ssh__ on the SD Card. This file should not have an extension and should live at the root of the directory. 
 ![alt text](http://url/to/img.png)
 
+
+## EJECT THE SD CARD
 
 ## SSH INTO THE PI ZERO W
