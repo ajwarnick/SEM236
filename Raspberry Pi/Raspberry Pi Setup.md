@@ -44,7 +44,7 @@ Next, append
 ```
 dtoverlay=dwc2 
 ```
-to the end of the /Volumes/boot/config.txt file on a new line. 
+to the end of the boot/config.txt file on a new line. 
 
 #### Edit boot/cmdline.txt
 Now you will need to edit cmdline.txt. Find `rootwait` and insert:
@@ -65,16 +65,29 @@ This will power on the Raspberry Pi. Next you will need to wait the 2 minutes fo
 
 
 ## SSH INTO THE PI ZERO W
- Now, after the Pi turns on, we will __ssh__ into it. 
+ Now, after the Pi turns on, we will _ssh_ into it. 
 ### launch Terminal 
 ### Test to see if your pi is connected and ready
 ```bash
 ping raspberrypi.local
 ```
+If the result is like this:
+```
+PING raspberrypi.local (192.168.2.10): 56 data bytes
+64 bytes from 192.168.2.10: icmp_seq=0 ttl=64 time=0.299 ms
+64 bytes from 192.168.2.10: icmp_seq=1 ttl=64 time=0.425 ms
+64 bytes from 192.168.2.10: icmp_seq=2 ttl=64 time=0.420 ms
+64 bytes from 192.168.2.10: icmp_seq=3 ttl=64 time=0.390 ms
+64 bytes from 192.168.2.10: icmp_seq=4 ttl=64 time=0.368 ms
+```
 
+Continue to the next step and type the command:
 
+```
+ssh pi@raspberrypi.local
+```
 
-
+![Are you sure you want to continue connecting](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_7.gif)
 
 
 ```
