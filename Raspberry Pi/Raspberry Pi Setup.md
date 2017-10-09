@@ -53,7 +53,7 @@ Now you will need to edit cmdline.txt. Find `rootwait` and insert:
 ```
 modules-load=dwc2,g_ether
 ```
-
+Make sure you follow the same space-delimited pattern as the rest of the file.
 
 
 ## LAUNCH YOUR PI
