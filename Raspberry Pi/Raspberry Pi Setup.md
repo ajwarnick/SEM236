@@ -41,16 +41,45 @@ Your SD Card should have these files and look like this
 We need to create a file called __ssh__ on the SD Card. This file should not have an extension and should live at the root of the directory. 
 ![alt text](http://url/to/img.png)
 
+#### Edit boot/config.txt
+Next, append 
+```
+dtoverlay=dwc2 
+```
+to the end of the /Volumes/boot/config.txt file on a new line. 
 
-## EJECT THE SD CARD
+#### Edit boot/cmdline.txt
+Now you will need to edit cmdline.txt. Find `rootwait` and insert:
+```
+modules-load=dwc2,g_ether
+```
 
-## INSERT THE SD CARD INTO THE RASPBERRY PI
 
-## PLUG THE MICRO USB INTO THE RASPBERRY PI
 
-## PLUG THE USB A INTO YOUR COMPUTER
-This will 
+## LAUNCH YOUR PI
+
+- EJECT THE SD CARD
+- INSERT THE SD CARD INTO THE RASPBERRY PI
+- PLUG THE MICRO USB INTO THE RASPBERRY PI
+- PLUG THE USB A INTO YOUR COMPUTER
+
+This will power on the Raspberry Pi. Next you will need to wait the 2 minutes for the Pi to boot for the first time. We need to make sure it is fully booted before we continue to the next step. It is fully booted when the green light stays solidly illuminated.  
 
 
 ## SSH INTO THE PI ZERO W
-Insert microSD card into the Pi and power with the micro USB cable. Now, after the Pi turns on, in about 30-90 seconds, it will fully boot and connect to WiFi.
+ Now, after the Pi turns on, we will __ssh__ into it. 
+### launch Terminal 
+### Test to see if your pi is connected and ready
+```bash
+ping raspberrypi.local
+```
+
+
+
+
+
+
+```
+Are you sure you want to continue connecting (yes/no)? yes
+```
+
