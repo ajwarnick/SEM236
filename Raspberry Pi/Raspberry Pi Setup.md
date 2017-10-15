@@ -124,3 +124,15 @@ scp -r /Users/warnick/Documents/Processing/TIME/Raspberry\ Pi/fm_transmitter-mas
 
 We will need to talk within our class and divid up the available spectrum. But the resource that we will use to find the frequencies we can use is https://radio-locator.com/
 
+
+
+
+
+## Connecting to the Internet
+First on your mac go to __System Preferances__ and go to __Sharing__.
+
+![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
+
+Now turn on the __Internet Sharing__ option.
+
+![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
