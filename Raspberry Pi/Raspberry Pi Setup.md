@@ -133,7 +133,7 @@ First on your mac go to __System Preferances__ and go to __Sharing__.
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
 Now turn on the __Internet Sharing__ option.
 ![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
-Next you will need go to __Network__ to change the settings on the RNDIS/Ethernet Gadget.
+Next you will need go to __Network__ to change the settings on the RNDIS/Ethernet Gadget.  
 __Adapter Settings__
 - Configure IPV4: Manually
 - IP Address: 192.168.2.1
