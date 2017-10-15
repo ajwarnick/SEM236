@@ -114,12 +114,6 @@ scp -r /Users/warnick/Documents/Processing/TIME/Raspberry\ Pi/fm_transmitter-mas
 
 
 
-
-
-
-
-
-
 ## FIND A FREQUENCY 
 
 We will need to talk within our class and divid up the available spectrum. But the resource that we will use to find the frequencies we can use is https://radio-locator.com/
@@ -127,29 +121,33 @@ We will need to talk within our class and divid up the available spectrum. But t
 
 
 
+# Week Two
+![week two](https://media.giphy.com/media/10UeedrT5MIfPG/giphy.gif)
+
 
 ## Connecting to the Internet
-First on your mac go to __System Preferances__ and go to __Sharing__.
+First on your mac go to __System Preferances__ and go to __Network__. If you do not see RNDIS/Ethernet Gadget on the side bar you will need to add it.
+
+This is done by clicking the + and selelecting selecting __RNDIS/Ethernet Gadget__ from the dropdown. And then click __Apply__.
+
+Now go to __Sharing__ from the main __System Preferances__ screen.
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
 Now turn on the __Internet Sharing__ option.
 ![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
-Next you will need go to __Network__ to change the settings on the RNDIS/Ethernet Gadget.  
-__Adapter Settings__
-- Configure IPV4: Manually
-- IP Address: 192.168.2.1
-- Subnet Mask: 255.255.255.0
+When it ask if you want to __start__ click start.
 
-![Manual IP](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_11.png)
-Now click the Advanced button and then navigate to the DNS tab. Click the + button and add any DNS server's you'd like. The ones I have entered below, 8.8.8.8 and 8.8.4.4, are owned by Google and are publicly available. 
-![DNS](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_10.png)
-Next you should plug in your raspberry pi and ssh into it for the next step.
+Now you will need to __ssh__ into your raspberry pi, and run the following command:
+
+```
+sudo sh -c 'echo "nameserver 8.8.8.8" >> /etc/resolv.conf'
+```
 
 ## Test Internet Connection
 The easiest way to test if the internet is working is to use `wget`. We will try to download this file with `wget`.
 ```
 wget https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/Raspberry%20Pi%20Setup.md
 ```
-If this works and completes without error you can contiune.
+If this works and completes without error you can contiune. (If it fails please email me.)
 
 ## Install sox
 Now we need to install an audio playing software.
@@ -158,3 +156,20 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install sox libsox-fmt-all
 ```
+## Moving your file to the raspberry pi
+Now you will need to ether download the .wav from the internet with `wget` or you will need to run this command:
+
+#### Notice that you will need to copy the path to your file on your computer
+```
+scp  /path/to/your/file/test.wav pi@raspberrypi.local:fm/fm_transmitter-master/
+```
+
+## Now test broadcast set up
+Run the following command, but make sure to replace the frequency with your frequency, and replace the file name with your file name. (note: please done use files with spaces in the names.)
+
+```
+sox fm/fm_transmitter-master/test.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm/fm_transmitter-master/fm_transmitter -f 90.3 -
+```
+
+## Adding broadcast command to run on start up
+
