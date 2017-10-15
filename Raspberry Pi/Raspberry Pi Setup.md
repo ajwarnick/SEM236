@@ -127,11 +127,13 @@ We will need to talk within our class and divid up the available spectrum. But t
 
 ## Connecting to the Internet
 First on your mac go to __System Preferances__ and go to __Network__. If you do not see RNDIS/Ethernet Gadget on the side bar you will need to add it.
-
-This is done by clicking the + and selelecting selecting __RNDIS/Ethernet Gadget__ from the dropdown. And then click __Apply__.
-
-Now go to __Sharing__ from the main __System Preferances__ screen.
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
+This is done by clicking the + and selelecting selecting __RNDIS/Ethernet Gadget__ from the dropdown. 
+![add rndis](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_12.png)
+And then click __Apply__.
+![add rndis](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_13.png)
+Now go to __Sharing__ from the main __System Preferances__ screen.
+![__Sharing__](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_14.png)
 Now turn on the __Internet Sharing__ option.
 ![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
 When it ask if you want to __start__ click start.
