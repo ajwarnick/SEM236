@@ -133,18 +133,15 @@ First on your mac go to __System Preferances__ and go to __Sharing__.
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
 Now turn on the __Internet Sharing__ option.
 ![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
-Next you will need to change the settings on the RNDIS/Ethernet Gadget.
+Next you will need go to __Network__ to change the settings on the RNDIS/Ethernet Gadget.
 __Adapter Settings__
 - Configure IPV4: Manually
 - IP Address: 192.168.2.1
 - Subnet Mask: 255.255.255.0
 
-![Manual IP](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_10.png)
+![Manual IP](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_11.png)
 Now click the Advanced button and then navigate to the DNS tab. Click the + button and add any DNS server's you'd like. The ones I have entered below, 8.8.8.8 and 8.8.4.4, are owned by Google and are publicly available. 
-![DNS](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_11.png)
-
-
-
+![DNS](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_10.png)
 Next you should plug in your raspberry pi and ssh into it for the next step.
 
 ## Test Internet Connection
