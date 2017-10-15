@@ -130,9 +130,34 @@ We will need to talk within our class and divid up the available spectrum. But t
 
 ## Connecting to the Internet
 First on your mac go to __System Preferances__ and go to __Sharing__.
-
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
-
 Now turn on the __Internet Sharing__ option.
-
 ![Internet Sharing](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_9.png)
+Next you will need to change the settings on the RNDIS/Ethernet Gadget.
+__Adapter Settings__
+- Configure IPV4: Manually
+- IP Address: 192.168.2.1
+- Subnet Mask: 255.255.255.0
+
+![Manual IP](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_10.png)
+Now click the Advanced button and then navigate to the DNS tab. Click the + button and add any DNS server's you'd like. The ones I have entered below, 8.8.8.8 and 8.8.4.4, are owned by Google and are publicly available. 
+![DNS](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_11.png)
+
+
+
+Next you should plug in your raspberry pi and ssh into it for the next step.
+
+## Test Internet Connection
+The easiest way to test if the internet is working is to use `wget`. We will try to download this file with `wget`.
+```
+wget https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/Raspberry%20Pi%20Setup.md
+```
+If this works and completes without error you can contiune.
+
+## Install sox
+Now we need to install an audio playing software.
+```
+sudo apt-get update 
+sudo apt-get upgrade
+sudo apt-get install sox libsox-fmt-all
+```
