@@ -130,7 +130,7 @@ First on your mac go to __System Preferances__ and go to __Network__. If you do 
 ![Sharing Preferance](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_8.png)
 This is done by clicking the + and selelecting selecting __RNDIS/Ethernet Gadget__ from the dropdown. 
 ![add rndis](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_12.png)
-And then click __Apply__.
+And then click __Create__ then click __Apply__.
 ![add rndis](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_13.png)
 Now go to __Sharing__ from the main __System Preferances__ screen.
 ![__Sharing__](https://raw.githubusercontent.com/ajwarnick/SEM236/master/Raspberry%20Pi/img/ras_pi_demo_14.png)
@@ -161,7 +161,7 @@ sudo apt-get install sox libsox-fmt-all
 ## Moving your file to the raspberry pi
 Now you will need to ether download the .wav from the internet with `wget` or you will need to run this command:
 
-#### Notice that you will need to copy the path to your file on your computer
+#### Notice that you will need to copy the path to your file on your computer and this should be in a new terminal window (not the window you are ssh'ed in).
 ```
 scp  /path/to/your/file/test.wav pi@raspberrypi.local:fm/fm_transmitter-master/
 ```
@@ -174,4 +174,17 @@ sox fm/fm_transmitter-master/test.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm/f
 ```
 
 ## Adding broadcast command to run on start up
+First run the command:
+```
+sudo nano /etc/rc.local
+```
+This will open and editor and a file that will run when we launch our raspberry pi. This file will have a few things already. Find the line `exit 0` and add the following on the line before it. 
 
+```
+sox home/pi/fm/fm_transmitter-master/test.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./home/pi/fm/fm_transmitter-master/fm_transmitter -f 90.3 - &
+```
+You will edit this so that it is your file name and location and your frequency. Make sure that the line ends with a __&__.
+Now type __control X__ and __Y__ and __Enter__.
+Next you will need to exit the ssh session. once that is closed you can un plug your raspberry pi and switch which USB port that you have your USB cord plugged into. 
+
+#### This should be all and you should be able to hear your audio after about 90 second boot.
