@@ -19,8 +19,23 @@ int temp = int(random(100));
 //Global ZIP CODE 
 String gZIP = "";
 
+
+// Info we need to make our app run
+String zip_code = "44102"; // this is our default value we will allow the user reset it
+String api_key = "b40ad42b19570cda654f98c76b597e22";
+
+
+// Data we will use in our app
+float tempK;
+float tempF;
+String description;
+
+
+
+
+
 void setup() { 
-  size(500, 400); 
+  size(450, 800); 
   //frameRate(1); 
   myColor1 = color(255, 0, 0); 
   myColor2 = color(0, 0, 0); 
@@ -64,6 +79,11 @@ void draw() {
     writeTemp(temp);
   }
   
+  //Call the get Weather here if you want to hook the app up to the internet
+  if(gZIP.length() == 5){
+    getWeather(gZIP);
+  }
+  
 } 
 
 
@@ -91,9 +111,6 @@ void keyPressed() {
     }else if(keyCode == 48){
       gZIP += "0";
     }
-    
-    //getWeather(gZIP);
-    gZIP = "";
     
   }else{
     
@@ -130,37 +147,54 @@ void writeTemp(int t) {
   //add the degree symbol to the string
   lt += "°"; 
   //set the color of the text
-  fill(100); 
+  fill(255); 
   //set the text size
   textSize(64); 
+  textAlign(CENTER, CENTER);  
   //write the text to the screen
-  text(lt, height/2, width/2);
+  text(lt, width/2, height/2);
 }
 
 void writeZIP(String z) { 
   //set the color of the text
-  fill(100); 
+  fill(255); 
   //set the text size
   textSize(64); 
+  textAlign(CENTER, CENTER); 
   //write the text to the screen
-  text(z, height/2, width/2);
+  text(z, width/2, height/2);
   
-  //Call the get Weather here if you want to hook the app up to the internet
   
 }
 
 
-JSONObject getWeather(String z){
-  
-  JSONObject json;
-  String whole_key = "&APPID=";
-  String api_key = "fa312eae86bd280cd0fd51fa3026aef9";
+void getWeather(String z){
+  // Get the data from Open Weather Map
   String zip_code = z;
-  String full_zip = "weather?zip=" + zip_code + ",us";
-  String our_url = "http://api.openweathermap.org/data/2.5/forecast/";
-  String full_url = our_url + full_zip + whole_key + api_key;
-
-  json = loadJSONObject(full_url);
+  String url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip_code + ",us&appid=" + api_key;
+  String[] json = loadStrings(url);
   
-  return json;
+  // Save that data locally
+  saveStrings("weather_data.json", json);
+  extractData();
+}
+
+
+void extractData(){
+  // Process the data into the variables we set at the beginning 
+  JSONObject jobj =  loadJSONObject("weather_data.json");
+  
+  // Get the discription
+  JSONArray weatherJSONArray = jobj.getJSONArray("weather");
+  description = weatherJSONArray.getJSONObject(0).getString("description");
+  
+  // Get the temp out of the JSON
+  JSONObject mainJSONArray  = jobj.getJSONObject("main");
+  tempK = mainJSONArray.getInt("temp");
+  
+  // Convert from Kelvin to Fahrenheit
+  //T(°F) = T(K) × 9/5 - 459.67
+  tempF = (tempK * 1.8) - 459.67; 
+  temp = int(tempF);
+  gZIP = "";
 }
